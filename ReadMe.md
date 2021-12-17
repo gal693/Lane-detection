@@ -33,8 +33,7 @@ Inside Ransac I also used cv2.drawline and cv2.puttext In order to modify the or
 
 Results:
 
-https://user-images.githubusercontent.com/83302424/146541117-afba2132-6bba-49b5-b9bf-c4674e417699.mp4
 
-
+https://user-images.githubusercontent.com/83302424/146541271-7ac75f81-1ed9-490d-9f13-050bcaa46e8b.mp4
 
 
