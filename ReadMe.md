@@ -11,7 +11,7 @@ For the edges, I used cv2.canny() with the given grayscale gaussian filtered ima
 I took one frame, scaled it and measured the most significant area of the frame which needed for the lane detection. 
 After finding all coordinates of the referred area, I used cv2.fillpoly and a mask to threshold the wanted area out of the frame.
 
-<img width="594" alt="צילום מסך 2021-12-17 ב-13 35 34" src="https://user-images.githubusercontent.com/83302424/146539121-cdabb457-e161-48b6-974c-a7c5c8d00590.png">
+<img width="594" alt="צילום מסך 2021-12-17 ב-13 35 34" src="https://user-images.githubusercontent.com/83302424/146539411-57542c87-ec63-4fb4-b781-e26d1c4688bd.png">
 
 
 3) Hough transform
@@ -29,4 +29,12 @@ Afterwards I use Ransac in order to find the correct lines for each frame.
 In addition, using the gradient of the resulted lines I found the frames where lane changing occurring.
 
 Inside Ransac I also used cv2.drawline and cv2.puttext In order to modify the original frame, and using cv2.videowriter I inserted it to the result video wanted.
+
+
+Results:
+
+https://user-images.githubusercontent.com/83302424/146541117-afba2132-6bba-49b5-b9bf-c4674e417699.mp4
+
+
+
 
