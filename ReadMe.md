@@ -11,6 +11,9 @@ For the edges, I used cv2.canny() with the given grayscale gaussian filtered ima
 I took one frame, scaled it and measured the most significant area of the frame which needed for the lane detection. 
 After finding all coordinates of the referred area, I used cv2.fillpoly and a mask to threshold the wanted area out of the frame.
 
+<img width="594" alt="צילום מסך 2021-12-17 ב-13 35 34" src="https://user-images.githubusercontent.com/83302424/146539121-cdabb457-e161-48b6-974c-a7c5c8d00590.png">
+
+
 3) Hough transform
 
 I used cv2.houghlinesp on the edge detected region sorted image to get the coordinates of the lines detected in each frame.
